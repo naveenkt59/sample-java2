@@ -1,0 +1,28 @@
+Apr 26, 2018 2:03:54 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, JNLP-connect, Ping, JNLP2-connect]
+Apr 26, 2018 2:03:57 PM com.youdevise.hudson.slavestatus.SlaveListener call
+INFO: Slave-status listener starting
+Apr 26, 2018 2:03:57 PM com.youdevise.hudson.slavestatus.SlaveListener$1 run
+SEVERE: Could not listen on port
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at com.youdevise.hudson.slavestatus.SocketHTTPListener.waitForConnection(SlaveListener.java:129)
+	at com.youdevise.hudson.slavestatus.SlaveListener$1.run(SlaveListener.java:63)
+	at com.youdevise.hudson.slavestatus.Daemon.go(Daemon.java:16)
+	at com.youdevise.hudson.slavestatus.SlaveListener.call(SlaveListener.java:83)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:208)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:360)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1$1.run(Engine.java:98)
+	at java.lang.Thread.run(Unknown Source)
+

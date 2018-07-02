@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14988" started-at="2018-07-02T07:08:41Z" finished-at="2018-07-02T07:08:56Z">
+    <groups>
+      <group name="Functional">
+        <method signature="Demo.TC_03()[pri:0, instance:drivers.Demo@343f4d3d]" name="TC_03" class="drivers.Demo"/>
+      </group> <!-- Functional -->
+      <group name="Regression">
+        <method signature="Demo.TC_03()[pri:0, instance:drivers.Demo@343f4d3d]" name="TC_03" class="drivers.Demo"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Demo.TC_03()[pri:0, instance:drivers.Demo@343f4d3d]" name="TC_03" class="drivers.Demo"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Default test" duration-ms="14988" started-at="2018-07-02T07:08:41Z" finished-at="2018-07-02T07:08:56Z">
+      <class name="drivers.Demo">
+        <test-method status="PASS" signature="data()[pri:0, instance:drivers.Demo@343f4d3d]" name="data" is-config="true" duration-ms="382" started-at="2018-07-02T12:38:41Z" finished-at="2018-07-02T12:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method status="FAIL" signature="TC_03()[pri:0, instance:drivers.Demo@343f4d3d]" name="TC_03" duration-ms="11513" started-at="2018-07-02T12:38:41Z" description="Organisation" finished-at="2018-07-02T12:38:53Z">
+          <exception class="com.sun.jersey.api.client.ClientHandlerException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sun.jersey.api.client.ClientHandlerException: java.io.FileNotFoundException: 
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler.handle(URLConnectionClientHandler.java:149)
+	at com.sun.jersey.api.client.Client.handle(Client.java:648)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:670)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:563)
+	at com.base.SonnetBase.uploadFileToServer(SonnetBase.java:73)
+	at com.lib.SonnetConnect.defect_update(SonnetConnect.java:137)
+	at com.testng.SonnetTestNGListner.onTestFailure(SonnetTestNGListner.java:136)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1895)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: 
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.sun.jersey.core.impl.provider.entity.FileProvider.writeTo(FileProvider.java:101)
+	at com.sun.jersey.core.impl.provider.entity.FileProvider.writeTo(FileProvider.java:64)
+	at com.sun.jersey.multipart.impl.MultiPartWriter.writeTo(MultiPartWriter.java:224)
+	at com.sun.jersey.multipart.impl.MultiPartWriter.writeTo(MultiPartWriter.java:71)
+	at com.sun.jersey.api.client.RequestWriter.writeRequestEntity(RequestWriter.java:311)
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler._invoke(URLConnectionClientHandler.java:204)
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler.handle(URLConnectionClientHandler.java:147)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sun.jersey.api.client.ClientHandlerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:drivers.Demo@343f4d3d]" name="openBrowser" is-config="true" duration-ms="2969" started-at="2018-07-02T12:38:41Z" finished-at="2018-07-02T12:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- drivers.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
